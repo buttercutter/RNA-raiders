@@ -497,7 +497,7 @@ def main():
         
         else:
             data_files["train"] = 'train.csv'
-            extension = data_args.train_file.split(".")[-1]            
+            extension = 'csv'
 
         if data_args.validation_file is not None:
             data_files["validation"] = data_args.validation_file
@@ -505,7 +505,7 @@ def main():
 
         else:
             data_files["validation"] = 'validate.csv'
-            extension = data_args.validation_file.split(".")[-1]
+            extension = 'csv'
 
         if data_args.test_file is not None:
             data_files["test"] = data_args.test_file
@@ -513,7 +513,7 @@ def main():
 
         else:
             data_files["test"] = 'test.csv'
-            extension = data_args.test_file.split(".")[-1]           
+            extension = 'csv'
 
         # See more about loading any type of standard or custom dataset (from files, python dict, pandas DataFrame, etc) at
         # https://huggingface.co/docs/datasets/loading_datasets.html
