@@ -1,0 +1,2 @@
+git lfs track "*.h5ad"
+git lfs track "*.txt"
